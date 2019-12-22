@@ -10,7 +10,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const title = 'mono_kit Demo';
+    const title = 'bootstrap';
     return MaterialApp(
       theme: buildTheme(),
       title: title,
