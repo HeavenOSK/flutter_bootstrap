@@ -12,14 +12,14 @@ void main() {
     MultiProvider(
       providers: [
         Provider(
-          builder: (context) => Store<AppState>(
+          create: (context) => Store<AppState>(
             appReducer,
             initialState: AppState.initialize(),
             middleware: appMiddleware(),
           ),
         ),
         Provider(
-          builder: (context) => Router(),
+          create: (context) => Router(),
         )
       ],
       child: const App(),

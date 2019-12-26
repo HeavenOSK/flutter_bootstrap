@@ -7,7 +7,7 @@ source=../app
 rm -rf ${name}
 
 flutter create \
-  --org com.mono0926 \
+  --org com.heavenosk \
   ${name}
 
 rm -rf ${name}/lib

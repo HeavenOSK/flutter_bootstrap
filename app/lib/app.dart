@@ -14,7 +14,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: buildTheme(),
       title: title,
-      home: const HomePage(),
+      home: HomePage.withDependencies(context),
       onGenerateRoute: Provider.of<Router>(context).onGenerateRoute,
     );
   }
