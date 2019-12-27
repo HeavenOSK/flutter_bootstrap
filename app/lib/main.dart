@@ -5,6 +5,7 @@ import 'package:redux/redux.dart';
 import 'app.dart';
 import 'redux/redux.dart';
 import 'router.dart';
+import 'util/util.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +16,7 @@ void main() {
           create: (context) => Store<AppState>(
             appReducer,
             initialState: AppState.initialize(),
-            middleware: appMiddleware(),
+            middleware: appMiddleware(navigatorKey: NavigatorKeyHolder.key),
           ),
         ),
         Provider(

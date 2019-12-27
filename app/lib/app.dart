@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'pages/pages.dart';
 import 'router.dart';
 import 'theme.dart';
+import 'util/util.dart';
 
 class App extends StatelessWidget {
   const App();
@@ -15,6 +16,7 @@ class App extends StatelessWidget {
       theme: buildTheme(),
       title: title,
       home: HomePage.withDependencies(context),
+      navigatorKey: NavigatorKeyHolder.key,
       onGenerateRoute: Provider.of<Router>(context).onGenerateRoute,
     );
   }
