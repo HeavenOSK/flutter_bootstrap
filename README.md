@@ -6,9 +6,9 @@
 
 ```bash
 # Flutter App
-./scripts/bootstrap.sh
+./scripts/bootstrap.sh # {YOUR_APP_NAME}
 # Package(including example)
-./scripts/bootstrap_package.sh
+./scripts/bootstrap_package.sh # {YOUR_PACKAGE_NAME}
 ```
 
 The project will be generated on `generated` directory.
