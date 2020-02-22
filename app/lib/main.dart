@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bootstrap/util/app_navigator.dart';
+import 'package:provider/provider.dart';
 
-import 'pages/pages.dart';
+import 'app.dart';
+import 'router.dart';
 
 void main() {
-  runApp(App());
-}
-
-class App extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage.wrapped(),
-    );
-  }
+  runApp(
+    MultiProvider(
+      providers: [
+        Provider(create: (_) => AppNavigator()),
+        Provider(create: (_) => Router()),
+      ],
+      child: App(),
+    ),
+  );
 }
