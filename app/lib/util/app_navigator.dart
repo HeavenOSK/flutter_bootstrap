@@ -5,8 +5,6 @@ class AppNavigator {
 
   NavigatorState get _navigator => key.currentState;
 
-  BuildContext get _context => _navigator.overlay.context;
-
   void pushNamed(String routeName, {Object arguments}) =>
       _navigator.pushNamed(routeName, arguments: arguments);
 
