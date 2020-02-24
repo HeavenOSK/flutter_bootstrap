@@ -11,6 +11,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   provider: any
   subscription_holder: any
+  vsync_provider:
+  disposable_provider:
   mono_kit: any
   dot_of: any
 dev_dependencies:
