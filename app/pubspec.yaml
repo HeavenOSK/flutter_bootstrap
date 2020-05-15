@@ -2,28 +2,38 @@ name: flutter_bootstrap
 description: A new Flutter application.
 version: 1.0.0+1
 environment:
-  sdk: ">=2.6.0-dev <3.0.0"
+  sdk: ">=2.8.1 <3.0.0"
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  provider: any
+  provider: 4.1.1
   subscription_holder: any
-  vsync_provider:
-  disposable_provider:
+  vsync_provider: any
+  disposable_provider: any
   mono_kit: any
-  dot_of: any
+  gap: any
+  rxdart: any
+  state_notifier: any
+  flutter_state_notifier: any
+  flutter_hooks: any
+  nested: any
+  firestore_ref: any
+  freezed_annotation: any
+  firebase_auth: ^0.16.0
+  cloud_firestore: ^0.13.5
+  firebase_messaging: ^6.0.15
+  firebase_analytics: ^5.0.11
+  firebase_storage: ^3.1.5
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner: any
   freezed: any
   json_serializable: any
-  pedantic_mono:
+  pedantic_mono: any
   intl_translation: any
-dependency_overrides:
-    provider: 4.1.0-dev
 flutter:
   uses-material-design: true
