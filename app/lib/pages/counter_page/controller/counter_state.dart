@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'counter.freezed.dart';
+part 'counter_state.freezed.dart';
 
 @freezed
 abstract class Counter with _$Counter {

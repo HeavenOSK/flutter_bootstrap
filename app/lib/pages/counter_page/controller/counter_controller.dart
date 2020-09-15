@@ -1,8 +1,13 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:state_notifier/state_notifier.dart';
 
-import 'counter.dart';
+import 'counter_state.dart';
 
-export 'counter.dart';
+export 'counter_state.dart';
+
+final counterControllerProvider = StateNotifierProvider.autoDispose((ref) {
+  return CounterController();
+});
 
 class CounterController extends StateNotifier<Counter> {
   CounterController() : super(const Counter());

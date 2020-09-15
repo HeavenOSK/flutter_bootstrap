@@ -9,31 +9,33 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  provider: 4.1.1
-  google_fonts: ^1.1.0
-  subscription_holder: any
-  vsync_provider: any
-  disposable_provider: any
-  mono_kit: any
-  gap: any
-  rxdart: any
+  # state management
   state_notifier: any
-  flutter_state_notifier: any
+  hooks_riverpod: any
   flutter_hooks: any
-  nested: any
+  subscription_holder: any
+  rxdart: any
+  # ui
   animations: any
-  firestore_ref: any
+  gap: any
+  mono_kit: any
+  adaptive_dialog: ^0.7.5+3
+  # Firebase
+#  firestore_ref: any
+#  firebase_auth: any
+#  cloud_firestore: any
+#  firebase_messaging: any
+#  firebase_analytics: any
+#  firebase_storage: any
+  trotter:
+
   freezed_annotation: any
-  firebase_auth: ^0.16.0
-  cloud_firestore: ^0.13.5
-  firebase_messaging: ^6.0.15
-  firebase_analytics: ^5.0.11
-  firebase_storage: ^3.1.5
-  trotter: ^1.2.0
+  functional_widget_annotation: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner: any
+  functional_widget:  ^0.8.0
+  build_runner: ^1.9.0
   freezed: any
   json_serializable: any
   pedantic_mono: any

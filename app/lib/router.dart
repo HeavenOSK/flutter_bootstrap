@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:mono_kit/mono_kit.dart';
 
+import 'pages/pages.dart';
 import 'util/util.dart';
 
 typedef WidgetPageBuilder = Widget Function(
@@ -8,11 +10,15 @@ typedef WidgetPageBuilder = Widget Function(
   RouteSettings settings,
 );
 
+final routerProvider = Provider((ref) => Router());
+
 // ignore: avoid_classes_with_only_static_members
 class Router {
   static const root = '/';
 
-  final _routes = <String, WidgetPageBuilder>{};
+  final _routes = <String, WidgetPageBuilder>{
+    root: (_context, _settings) => const CounterPage(),
+  };
   final _fadeRoutes = <String, WidgetPageBuilder>{};
   final _modalRoutes = <String, WidgetPageBuilder>{};
 
