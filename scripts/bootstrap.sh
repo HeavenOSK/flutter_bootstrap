@@ -5,8 +5,8 @@ cd generated
 
 source=../app
 rm -rf ${name}
-
-flutter create \
+fvm use dev --force
+fvm flutter create \
   --org com.heavenosk \
   ${name}
 
