@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bootstrap/pages/counter_page/counter_page.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hooks_riverpod/all.dart';
 
 import 'l10n/l10n.dart';
-import 'router.dart';
 import 'util/util.dart';
 
 class App extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final navigatorKey = useProvider(appNavigatorProvider).key;
-    final router = useProvider(routerProvider);
     return MaterialApp(
       navigatorKey: navigatorKey,
       title: 'Flutter Demo',
@@ -26,7 +25,7 @@ class App extends HookWidget {
         Locale('en'),
         Locale('ja'),
       ],
-      onGenerateRoute: router.onGenerateRoute,
+      home: const CounterPage(),
     );
   }
 }

@@ -5,13 +5,16 @@ cd generated
 
 source=../app
 rm -rf ${name}
-fvm use dev --force
-fvm flutter create \
-  --org com.heavenosk \
+flutter create \
+  --org com.paret \
   ${name}
 
 rm -rf ${name}/lib
 rm -rf ${name}/test
+rm -rf ${name}/android
+rm -rf ${name}/ios
+rm -rf ${name}/macos
+rm -rf ${name}/web
 
 cp -r ${source}/lib ${name}
 cp -r ${source}/test ${name}
