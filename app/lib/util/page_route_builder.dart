@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class PageRouteBuilder {
   static MaterialPageRoute<T> buildMaterialRoute<T>({
-    @required WidgetBuilder builder,
-    @required String name,
+    required WidgetBuilder builder,
+    String? name,
     bool fullscreenDialog = false,
   }) {
     return MaterialPageRoute<T>(

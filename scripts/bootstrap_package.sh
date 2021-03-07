@@ -6,7 +6,7 @@ source=../package
 rm -rf ${name}
 
 flutter create \
-  --org com.mono0926 \
+  --org com.heavenosk \
   --template package \
   ${name}
 
